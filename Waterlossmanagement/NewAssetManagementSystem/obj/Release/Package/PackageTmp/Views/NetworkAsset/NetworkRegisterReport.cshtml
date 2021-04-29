@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "NetworkRegisterReport";
+    Layout = "~/Views/Shared/_LayoutPagineted.cshtml";
+}
+
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Network Asset Register Report</h3>
+            </div>
+
+            <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li>
+                                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Settings 1</a>
+                                    <a class="dropdown-item" href="#">Settings 2</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <h6 class="bg-green text-center">@ViewBag.Message</h6>
+                        <h6 class="bg-red text-center">@ViewBag.Error</h6>
+                        <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Assettype</th>
+                                    <th>Chamber</th>
+                                    <th>Condition</th>
+                                    <th>Mark Plate</th>
+                                    <th>Mark Post</th>
+                                    <th>Officer Name</th>
+                                    <th>Pay Type</th>
+                                    @*<th>Pipe Material</th>
+                                    <th>Serial Num</th>
+                                    <th>Size</th>
+                                    <th>Street Name</th>
+                                    <th>Xcordinate</th>
+                                    <th>Ycordinate</th>
+                                    <th>Ycordinate</th>*@
+                                </tr>
+                            </thead>
+
+
+                            <tbody>
+                                @if (ViewBag.Assetregisters != null)
+                                {
+                                    foreach (var assetregister in ViewBag.Assetregisters)
+                                    {
+                                <tr class="even pointer">
+                                    <td class=" ">@assetregister.Assettype</td>
+                                    <td class=" ">@assetregister.chamber</td>
+                                    <td class=" ">@assetregister.condition</td>
+                                    <td class=" ">@assetregister.markplate</td>
+                                    <td class=" ">@assetregister.markpost</td>
+                                    <td class=" ">@assetregister.officername</td>
+                                    <td class=" ">@assetregister.paytype</td>
+                                    @*<td class=" ">@assetregister.PipeMaterial</td>
+                                    <td class=" ">@assetregister.SerialNum</td>
+                                    <td class=" ">@assetregister.Size</td>
+                                    <td class=" ">@assetregister.streetname</td>
+                                    <td class=" ">@assetregister.xcordinate</td>
+                                    <td class=" ">@assetregister.ycordinate</td>
+                                    <td>
+                                        <a href="~/Customer/CustomerBill?recordid=@assetregister.RecordId" class="fa-edit">Edit</a>
+                                    </td>*@
+                                </tr>
+                                    }
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
