@@ -2059,7 +2059,6 @@
     <Content Include="content\vendors\Flot\examples\series-toggle\index.html" />
     <Content Include="content\vendors\Flot\examples\series-types\index.html" />
     <Content Include="content\vendors\Flot\examples\shared\jquery-ui\jquery-ui.min.css" />
-    <Content Include="content\vendors\Flot\examples\shared\jquery-ui\jquery-ui.min.js" />
     <Content Include="content\vendors\Flot\examples\stacking\index.html" />
     <Content Include="content\vendors\Flot\examples\symbols\index.html" />
     <Content Include="content\vendors\Flot\examples\threshold\index.html" />
@@ -4869,7 +4868,6 @@
     <Content Include="Views\Assign\AssignToUser.cshtml" />
     <Content Include="Views\Assign\ViewAssignedItems.cshtml" />
     <Content Include="Views\User\EditUser.cshtml" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\WaterLoss\Dashboard.cshtml" />
     <Content Include="Views\User\Water.cshtml" />
     <Content Include="Views\User\WaterLossReport.cshtml" />
@@ -4880,6 +4878,7 @@
     <Content Include="Views\HumanResource\EmployeeReport.cshtml" />
     <Content Include="Views\JobCard\CreateJobCard.cshtml" />
     <Content Include="Views\JobCard\ViewJobCards.cshtml" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AssetManagementSystem-Web.config Connection String" description="AssetManagementSystem Connection String used in web.config by the application to access the database." defaultValue="Data Source=liveyassakoinstance.cbsz6camcskh.us-west-2.rds.amazonaws.com;Initial Catalog=AssetManagementSystem;User id=yassako;Password=T3rr16132020;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\working\ directory\\borno-asset-management-system\\Waterlossmanagement\\NewAssetManagementSystem\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AssetManagementSystem']/@connectionString" />
+  </parameter>
+</parameters>
