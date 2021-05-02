@@ -4879,6 +4879,7 @@
     <Content Include="Views\JobCard\CreateJobCard.cshtml" />
     <Content Include="Views\JobCard\ViewJobCards.cshtml" />
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
+    <Content Include="Views\HumanResource\LeaveApplication.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

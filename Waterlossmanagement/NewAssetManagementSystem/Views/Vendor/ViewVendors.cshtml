@@ -7,7 +7,7 @@
 <div class="">
     <div class="page-title">
         <div class="title_left">
-            <h3>Tables <small> of User Departments</small></h3>
+            <h3>Tables <small> of Vendors</small></h3>
         </div>
 
         <div class="title_right">
@@ -28,7 +28,7 @@
         <div class="col-md-12 col-sm-12  ">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>System <small>User Departments</small></h2>
+                    <h2>Asset <small>Vendors</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li>
                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -51,6 +51,7 @@
                     <h6 class="bg-green text-center">@ViewBag.Message</h6>
                     <h6 class="bg-red text-center">@ViewBag.Error</h6>
                     <button type="submit" class="btn btn-success" onclick="print();">Print Report</button>
+                    <a class="btn btn-success pull-right" href="~/Vendor/CreateVendor">Add New Vendor</a>
                     <div class="table-responsive">
                         <table class="table table-striped jambo_table bulk_action" id="tabletoprint">
                             <thead>

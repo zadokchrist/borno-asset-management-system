@@ -16,6 +16,11 @@ namespace NewAssetManagementSystem.Controllers
             return View();
         }
 
+        public ActionResult LeaveApplication() 
+        {
+            return View();
+        }
+
         public ActionResult EmployeeReport()
         {
             try

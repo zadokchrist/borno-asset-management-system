@@ -47,7 +47,8 @@
                 </div>
 
                 <div class="x_content">
-                     <button type="submit" class="btn btn-success" onclick="print();">Print Report</button>
+                    <button type="submit" class="btn btn-success" onclick="print();">Print Report</button>
+                    <a class="btn btn-success pull-right" href="~/User/CreateUser">Add Users</a>
                     <div class="table-responsive">
                         <table class="table table-striped jambo_table bulk_action" id="tabletoprint">
                             <thead>
@@ -72,18 +73,18 @@
                                 {
                                     foreach (var user in ViewBag.SystemUsers)
                                     {
-                                <tr class="even pointer">
-                                    <td class=" ">@user.Uid</td>
-                                    <td class=" ">@user.Fname</td>
-                                    <td class=" ">@user.Lname</td>
-                                    <td class=" ">@user.Uname</td>
-                                    <td class=" ">@user.Uemail</td>
-                                    <td class=" ">@user.Utype</td>
-                                    <td class=" last">
-                                        <a href="~/User/EditUser?userid=@user.Uid" class="fa-edit">Edit</a>
-                                        <a href="~/User/Delete?userid=@user.Uid" class="fa-delicious">Delete</a>
-                                    </td>
-                                </tr>
+                                        <tr class="even pointer">
+                                            <td class=" ">@user.Uid</td>
+                                            <td class=" ">@user.Fname</td>
+                                            <td class=" ">@user.Lname</td>
+                                            <td class=" ">@user.Uname</td>
+                                            <td class=" ">@user.Uemail</td>
+                                            <td class=" ">@user.Utype</td>
+                                            <td class=" last">
+                                                <a href="~/User/EditUser?userid=@user.Uid" class="fa-edit">Edit</a>
+                                                <a href="~/User/Delete?userid=@user.Uid" class="fa-delicious">Delete</a>
+                                            </td>
+                                        </tr>
                                     }
 
                                 }
