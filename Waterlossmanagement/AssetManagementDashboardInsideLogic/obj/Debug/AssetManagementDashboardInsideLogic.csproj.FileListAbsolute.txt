@@ -25,3 +25,10 @@ D:\working directory\borno-asset-management-system\Waterlossmanagement\AssetMana
 D:\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csprojAssemblyReference.cache
 D:\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csproj.CoreCompileInputs.cache
 D:\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csproj.CopyComplete
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.dll.config
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.dll
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.pdb
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csproj.CoreCompileInputs.cache
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csproj.CopyComplete
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.dll
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.pdb

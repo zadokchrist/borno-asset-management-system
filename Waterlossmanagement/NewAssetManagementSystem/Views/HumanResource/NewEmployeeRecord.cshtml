@@ -72,6 +72,22 @@
                             </div>
                             <div class="item form-group">
                                 <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                    NSSF Number <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" name="empid" required="required" class="form-control">
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                    Tin Number <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" name="empid" required="required" class="form-control">
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
                                     National Id <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 ">
@@ -128,14 +144,22 @@
                             </div>
                             <div class="item form-group">
                                 <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                    Title <span class="required">*</span>
+                                    Marital Staus <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 ">
                                     <select name="emptype" class="form-control" required>
                                         <option disabled>Please Select Employee Type</option>
-                                        <option>Head Of Department</option>
-                                        <option> Department Staff</option>
+                                        <option>Married</option>
+                                        <option>Single</option>
                                     </select>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                    Title <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" class="form-control" required />
                                 </div>
                             </div>
                             <div class="item form-group">
@@ -149,7 +173,7 @@
                                         {
                                             foreach (var department in ViewBag.Departments)
                                             {
-                                                <option value="@department.Id">@department.building (@department.room_name, @department.floor)</option>
+                                                <option value="@department.Id">@department.lname</option>
                                             }
                                         }
                                     </select>

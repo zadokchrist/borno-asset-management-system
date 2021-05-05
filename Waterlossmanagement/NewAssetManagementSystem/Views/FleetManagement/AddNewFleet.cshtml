@@ -1,13 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "LeaveApplication";
+    ViewBag.Title = "AddNewFleet";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="">
     <div class="page-title">
         <div class="title_left">
-            <h3>Apply for leave</h3>
+            <h3>Create New Fleet</h3>
         </div>
 
         <div class="title_right">
@@ -26,7 +26,7 @@
         <div class="col-md-12 col-sm-12 ">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Apply For Leave</h2>
+                    <h2>Add New Fleet</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li>
                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -56,59 +56,74 @@
 
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">
-                                Leave Type <span class="required">*</span>
+                                Car Type <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <div class="col-md-6 col-sm-6 ">
-                                    <select name="emptype" class="form-control" required>
-                                        <option></option>
-                                        <option>Annual Leave</option>
-                                        <option> Maternity Leave</option>
-                                        <option> Compassionate Leave</option>
-                                        <option> Study Leave</option>
-                                        <option> Sick Leave</option>
-                                    </select>
-                                </div>
+                                <input type="text" name="cartype" required="required" class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                Start Date  <span class="required">*</span>
+                                Model <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="date" name="empid" required="required" class="form-control">
+                                <input type="text" name="model" required="required" class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                End Date <span class="required">*</span>
+                                Driver <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="date" name="empid" required="required" class="form-control">
+                                <input type="text" name="driver" required="required" class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                Address while On Leave <span class="required">*</span>
+                                Location of Duty <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="date" name="empid" required="required" class="form-control">
+                                <input type="text" name="locofduty" required="required" class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                Delegation of Duties <span class="required">*</span>
+                                Fuel Allocation <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="date" name="empid" required="required" class="form-control">
+                                <input type="text" name="fuelalloc" required="required" class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                Comment <span class="required">*</span>
+                                Maintainance Schedule <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <textarea class="form-control"></textarea>
+                                <select name="maintschedule" class="form-control">
+                                    <option></option>
+                                    <option>Monthly</option>
+                                    <option>Quarterly</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                Insurance Type <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <select name="insurancetype" class="form-control">
+                                    <option></option>
+                                    <option>Comprehensive</option>
+                                    <option>Third Party</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                Insurance Expiry Date <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="date" name="insuranceexpiry" class="form-control" required/>
                             </div>
                         </div>
                         <div class="ln_solid"></div>

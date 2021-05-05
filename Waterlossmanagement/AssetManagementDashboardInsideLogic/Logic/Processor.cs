@@ -64,6 +64,12 @@ namespace AssetManagementDashboardInsideLogic.Logic
             return dataTable;
         }
 
+        public DataTable GetEmployeesById(string empid)
+        {
+            dataTable = dh.GetEmployeesById(empid);
+            return dataTable;
+        }
+
         public DataTable GetSoftwareStockWithVendor()
         {
             try
@@ -124,6 +130,52 @@ namespace AssetManagementDashboardInsideLogic.Logic
             {
                 throw ex;
             }
+        }
+
+        public void CreateFleet(Fleet fleet) 
+        {
+            try
+            {
+                dh.CreateFleet(fleet.CarType, fleet.Model, fleet.Driver, fleet.LocationOfDuty, fleet.FuelAllocation, fleet.MaintainaceSchedule, fleet.InsuranceType, fleet.InsuranceExpiry);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public RecordedFleets GetFleets() 
+        {
+            RecordedFleets recordedFleets = new RecordedFleets();
+            try
+            {
+                dataTable = dh.GetFleet();
+                if (dataTable.Rows.Count>0)
+                {
+                    List<Fleet> fleets = new List<Fleet>();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        Fleet fleet = new Fleet();
+                        fleet.RecordId = dr["RecordId"].ToString();
+                        fleet.Model = dr["Model"].ToString();
+                        fleet.MaintainaceSchedule = dr["MaintainaceSchedule"].ToString();
+                        fleet.LocationOfDuty = dr["LocationOfDuty"].ToString();
+                        fleet.InsuranceType = dr["InsuranceType"].ToString();
+                        fleet.InsuranceExpiry = dr["InsuranceExpiry"].ToString();
+                        fleet.FuelAllocation = dr["FuelAllocation"].ToString();
+                        fleet.Driver = dr["Driver"].ToString();
+                        fleet.CarType = dr["CarType"].ToString();
+                        fleets.Add(fleet);
+                    }
+                    recordedFleets.fleets = fleets;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            return recordedFleets;
         }
 
         public DataTable GetSystemUsersWithDepartment()

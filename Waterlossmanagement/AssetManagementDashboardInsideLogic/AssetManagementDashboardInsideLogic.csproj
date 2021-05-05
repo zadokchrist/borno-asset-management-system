@@ -59,9 +59,11 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Fleet.cs" />
     <Compile Include="Models\HardWareStock.cs" />
     <Compile Include="Models\ItemsAssigned.cs" />
     <Compile Include="Models\JobCard.cs" />
+    <Compile Include="Models\RecordedFleets.cs" />
     <Compile Include="Models\SoftwareStock.cs" />
     <Compile Include="Models\SystemUser.cs" />
     <Compile Include="Models\Vendor.cs" />

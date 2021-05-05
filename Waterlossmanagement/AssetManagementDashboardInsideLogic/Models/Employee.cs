@@ -19,5 +19,6 @@ namespace AssetManagementDashboardInsideLogic.Models
         public string ExpiryDate { get; set; }
         public string Status { get; set; }
         public string DateRecorded { get; set; }
+        public string RecordId { get; set; }
     }
 }

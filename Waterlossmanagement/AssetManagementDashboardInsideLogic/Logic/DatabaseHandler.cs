@@ -62,6 +62,20 @@ namespace AssetManagementDashboardInsideLogic.Logic
             }
         }
 
+        internal DataTable GetEmployeesById(string empid)
+        {
+            try
+            {
+                command = DbConnection.GetStoredProcCommand("GetEmployeesById", empid);
+                returntable = DbConnection.ExecuteDataSet(command).Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return returntable;
+        }
+
         internal DataTable GetJobCardDetails()
         {
             try
@@ -115,6 +129,26 @@ namespace AssetManagementDashboardInsideLogic.Logic
             {
                 throw ex;
             }
+        }
+
+        internal void CreateFleet(string carType, string model, string driver, string locationOfDuty, string fuelAllocation, string maintainaceSchedule, string insuranceType, string insuranceExpiry)
+        {
+            command = DbConnection.GetStoredProcCommand("CreateFleet", carType, model, driver, locationOfDuty, fuelAllocation, maintainaceSchedule, insuranceType, insuranceExpiry);
+            DbConnection.ExecuteNonQuery(command);
+        }
+
+        internal DataTable GetFleet()
+        {
+            try
+            {
+                command = DbConnection.GetStoredProcCommand("GetFleet");
+                returntable = DbConnection.ExecuteDataSet(command).Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return returntable;
         }
 
         internal DataTable GetSoftwareStockWithVendor()

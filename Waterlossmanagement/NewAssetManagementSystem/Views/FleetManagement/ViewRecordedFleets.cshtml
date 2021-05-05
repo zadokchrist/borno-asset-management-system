@@ -1,13 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "EmployeeReport";
-    Layout = "~/Views/Shared/_LayoutPagineted.cshtml";
+    ViewBag.Title = "ViewRecordedFleets";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="">
     <div class="page-title">
         <div class="title_left">
-            <h3>Employee Report</h3>
+            <h3>Fleet Report</h3>
         </div>
 
         <div class="title_right">
@@ -50,42 +50,38 @@
 
                     <h6 class="bg-green text-center">@ViewBag.Message</h6>
                     <h6 class="bg-red text-center">@ViewBag.Error</h6>
-                    <a class="btn btn-success pull-right" href="~/HumanResource/NewEmployeeRecord">Add New Employee</a>
+                    <a class="btn btn-success pull-right" href="~/FleetManagement/AddNewFleet">Add New Fleet</a>
                     <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th>EmployeeId</th>
-                                <th>EmployeeName</th>
-                                <th>EmployeeType</th>
-                                <th>EmpAddress</th>
-                                <th>EmpPhoneNumber</th>
-                                <th>Contractdate</th>
-                                <th>Expirydate</th>
-                                <th>Status</th>
-                                <th>RecordDate</th>
-                                <th>Department</th>
-                                <th>DateOfBirth</th>
+                                <th>Fleet Id</th>
+                                <th>CarType</th>
+                                <th>Model</th>
+                                <th>Driver</th>
+                                <th>Location Of Duty</th>
+                                <th>Fuel Allocation</th>
+                                <th>Maintainance Scheduel</th>
+                                <th>Insurance Type</th>
+                                <th>Insurance Expiry</th>
                             </tr>
                         </thead>
 
 
                         <tbody>
-                            @if (ViewBag.employees != null)
+                            @if (ViewBag.Fleet != null)
                             {
-                                foreach (var employee in ViewBag.employees)
+                                foreach (var fleet in ViewBag.Fleet)
                                 {
                                     <tr class="even pointer">
-                                        <td class=" ">@employee.EmployeeId</td>
-                                        <td class=" "><a href="~/HumanResource/ViewEmpDetails?empid=@employee.RecordId">@employee.EmployeeName</a></td>
-                                        <td class=" ">@employee.EmpType</td>
-                                        <td class=" ">@employee.Address</td>
-                                        <td class=" ">@employee.PhoneNumber</td>
-                                        <td class=" ">@employee.ContractDate</td>
-                                        <td class=" ">@employee.ExpiryDate</td>
-                                        <td class=" ">@employee.Status</td>
-                                        <td class=" ">@employee.DateRecorded</td>
-                                        <td class=" ">@employee.Department</td>
-                                        <td class=" ">@employee.DOB</td>
+                                        <td class=" ">@fleet.RecordId</td>
+                                        <td class=" ">@fleet.CarType</td>
+                                        <td class=" ">@fleet.Model</td>
+                                        <td class=" ">@fleet.Driver</td>
+                                        <td class=" ">@fleet.LocationOfDuty</td>
+                                        <td class=" ">@fleet.FuelAllocation</td>
+                                        <td class=" ">@fleet.MaintainaceSchedule</td>
+                                        <td class=" ">@fleet.InsuranceType</td>
+                                        <td class=" ">@fleet.InsuranceExpiry</td>
                                     </tr>
                                 }
 

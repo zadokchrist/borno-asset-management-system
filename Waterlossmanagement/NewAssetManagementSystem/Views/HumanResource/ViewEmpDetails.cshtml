@@ -1,13 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "LeaveApplication";
+    ViewBag.Title = "ViewEmpDetails";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="">
     <div class="page-title">
         <div class="title_left">
-            <h3>Apply for leave</h3>
+            <h3>Employee Details</h3>
         </div>
 
         <div class="title_right">
@@ -26,7 +26,7 @@
         <div class="col-md-12 col-sm-12 ">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Apply For Leave</h2>
+                    <h2>Employee Details</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li>
                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -50,73 +50,109 @@
                 </div>
                 <div class="x_content">
                     <br />
-                    <h6 class="bg-green text-center">@ViewBag.Message</h6>
-                    <h6 class="bg-red text-center">@ViewBag.Error</h6>
+                    @if (ViewBag.Message != null)
+                    {
+                        <h6 class="bg-green text-center">@ViewBag.Message</h6>
+                    }
+                    else if (ViewBag.Error != null)
+                    {
+                        <h6 class="bg-red text-center">@ViewBag.Error</h6>
+                    }
+
                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post">
 
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">
-                                Leave Type <span class="required">*</span>
+                                Employee Name <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <div class="col-md-6 col-sm-6 ">
-                                    <select name="emptype" class="form-control" required>
-                                        <option></option>
-                                        <option>Annual Leave</option>
-                                        <option> Maternity Leave</option>
-                                        <option> Compassionate Leave</option>
-                                        <option> Study Leave</option>
-                                        <option> Sick Leave</option>
-                                    </select>
-                                </div>
+                                <input type="text" value="@ViewBag.Employees.EmployeeName" disabled class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                Start Date  <span class="required">*</span>
+                                Employement Id <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="date" name="empid" required="required" class="form-control">
+                                <input type="text" value="@ViewBag.Employees.EmployeeId" disabled class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                End Date <span class="required">*</span>
+                                NSSF Number <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="date" name="empid" required="required" class="form-control">
+                                <input type="text" name="empid" required="required" class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                Address while On Leave <span class="required">*</span>
+                                Tin Number <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="date" name="empid" required="required" class="form-control">
+                                <input type="text" name="empid" required="required" class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                Delegation of Duties <span class="required">*</span>
+                                National Id <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="date" name="empid" required="required" class="form-control">
+                                <input type="text" name="empid" required="required" class="form-control">
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
-                                Comment <span class="required">*</span>
+                                Employee Phone Number <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <textarea class="form-control"></textarea>
+                                <input type="text" value="@ViewBag.Employees.PhoneNumber" disabled class="form-control">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                Employee Address <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="text" value="@ViewBag.Employees.Address" disabled class="form-control">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                Date of Birth <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="text" value="@ViewBag.Employees.DOB" disabled class="form-control">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                Title <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="text" value="@ViewBag.Employees.EmpType" disabled class="form-control">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align">
+                                Department <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="text" value="@ViewBag.Employees.Department" disabled class="form-control">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                Contract Date <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="text" value="@ViewBag.Employees.ContractDate" disabled class="form-control">
                             </div>
                         </div>
                         <div class="ln_solid"></div>
                         <div class="item form-group">
                             <div class="col-md-6 col-sm-6 offset-md-3">
-                                <button class="btn btn-primary" type="button">Cancel</button>
-                                <button class="btn btn-primary" type="reset">Reset</button>
-                                <button type="submit" class="btn btn-success">Submit</button>
+                                <a href="~/HumanResource/EmployeeReport" class="btn btn-primary">Back</a>
                             </div>
                         </div>
 
@@ -127,4 +163,3 @@
     </div>
 
 </div>
-

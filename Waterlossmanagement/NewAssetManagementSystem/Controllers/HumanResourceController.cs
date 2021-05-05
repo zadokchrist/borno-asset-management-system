@@ -21,6 +21,45 @@ namespace NewAssetManagementSystem.Controllers
             return View();
         }
 
+        public ActionResult ViewEmpDetails(string empid) 
+        {
+            try
+            {
+
+                List<AssetManagementDashboardInsideLogic.Models.Employee> employees = new List<AssetManagementDashboardInsideLogic.Models.Employee>();
+                DataTable table = processor.GetEmployeesById(empid);
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow dr in table.Rows)
+                    {
+                        AssetManagementDashboardInsideLogic.Models.Employee employee = new AssetManagementDashboardInsideLogic.Models.Employee();
+                        employee.Address = dr["EmpAddress"].ToString();
+                        employee.ContractDate = dr["Contractdate"].ToString();
+                        employee.Department = dr["lname"].ToString();
+                        employee.DOB = dr["DateOfBirth"].ToString();
+                        employee.EmployeeId = dr["EmployeeId"].ToString();
+                        employee.EmployeeName = dr["EmployeeName"].ToString();
+                        employee.EmpType = dr["EmployeeType"].ToString();
+                        employee.ExpiryDate = dr["Expirydate"].ToString();
+                        employee.PhoneNumber = dr["EmpPhoneNumber"].ToString();
+                        employee.Status = dr["Status"].ToString();
+                        employee.DateRecorded = dr["RecordDate"].ToString();
+                        employees.Add(employee);
+                    }
+                    ViewBag.Employees = employees;
+                }
+                else
+                {
+                    ViewBag.Message = "NO RECORDS FOUND";
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = ex.Message;
+            }
+            return View();
+        }
+
         public ActionResult EmployeeReport()
         {
             try
@@ -44,6 +83,7 @@ namespace NewAssetManagementSystem.Controllers
                         employee.PhoneNumber = dr["EmpPhoneNumber"].ToString();
                         employee.Status = dr["Status"].ToString();
                         employee.DateRecorded = dr["RecordDate"].ToString();
+                        employee.RecordId = dr["RecordId"].ToString();
                         employees.Add(employee);
                     }
                     ViewBag.Employees = employees;

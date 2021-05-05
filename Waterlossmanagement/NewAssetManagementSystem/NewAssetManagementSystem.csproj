@@ -110,6 +110,7 @@
     <Content Include="content\build\images\loading.gif" />
     <Content Include="content\build\js\custom.js" />
     <Content Include="content\build\js\custom.min.js" />
+    <Content Include="content\images\onedesignlogo.png" />
     <Content Include="content\vendors\animate.css\animate.css" />
     <Content Include="content\vendors\animate.css\animate.min.css" />
     <Content Include="content\vendors\animate.css\gulpfile.js" />
@@ -3804,6 +3805,7 @@
     <Compile Include="Controllers\AssignController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
+    <Compile Include="Controllers\FleetManagementController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HumanResourceController.cs" />
     <Compile Include="Controllers\JobCardController.cs" />
@@ -4880,6 +4882,9 @@
     <Content Include="Views\JobCard\ViewJobCards.cshtml" />
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <Content Include="Views\HumanResource\LeaveApplication.cshtml" />
+    <Content Include="Views\FleetManagement\AddNewFleet.cshtml" />
+    <Content Include="Views\FleetManagement\ViewRecordedFleets.cshtml" />
+    <Content Include="Views\HumanResource\ViewEmpDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

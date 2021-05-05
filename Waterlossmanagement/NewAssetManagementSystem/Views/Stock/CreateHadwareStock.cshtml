@@ -58,7 +58,14 @@
                                 Hardware Name <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                <input type="text" id="hard-name" required="required" class="form-control" name="hardwarename">
+                                <select class="form-control" name="hardwarename">
+                                    <option></option>
+                                    <option value="Computer">Computer</option>
+                                    <option>Printer</option>
+                                    <option>Laptop</option>
+                                    <option>Tv</option>
+                                    <option>Phone</option>
+                                </select>
                             </div>
                         </div>
                         <div class="item form-group">
@@ -70,7 +77,23 @@
                             </div>
                         </div>
                         <div class="item form-group">
-                            <label for="middle-name" class="col-form-label col-md-3 col-sm-3 label-align">Vendor Name</label>
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                Location <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="text" id="location" name="location" required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">
+                                Life Span (years) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="number" id="location" name="lifespan" required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="middle-name" class="col-form-label col-md-3 col-sm-3 label-align">Vendor/Brand Name</label>
                             <div class="col-md-6 col-sm-6 ">
                                 <select class="form-control" name="vname">
                                     <option></option>
@@ -90,6 +113,30 @@
                             </label>
                             <div class="col-md-6 col-sm-6 ">
                                 <input type="date" name="dop" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align">
+                                Serial Number <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="text" name="serial" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align">
+                                Location <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="text" name="location" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align">
+                                Description <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <textarea class="form-control" name="description"></textarea>
                             </div>
                         </div>
                         <div class="item form-group">

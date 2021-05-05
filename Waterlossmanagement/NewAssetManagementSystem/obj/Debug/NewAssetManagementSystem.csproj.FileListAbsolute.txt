@@ -230,6 +230,7 @@ D:\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetM
 D:\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.csprojAssemblyReference.cache
 D:\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.csproj.CoreCompileInputs.cache
 D:\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.csproj.CopyComplete
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.csproj.CoreCompileInputs.cache
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\bin\NewAssetManagementSystem.dll.config
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\bin\NewAssetManagementSystem.dll
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\bin\NewAssetManagementSystem.pdb
@@ -302,8 +303,7 @@ D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\bin\System.Web.Helpers.xml
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\bin\System.Web.Mvc.xml
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.csprojAssemblyReference.cache
-D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.csproj.CoreCompileInputs.cache
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.csproj.CopyComplete
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.dll
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.pdb
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\NewAssetManagementSystem\obj\Debug\NewAssetManagementSystem.csprojAssemblyReference.cache
