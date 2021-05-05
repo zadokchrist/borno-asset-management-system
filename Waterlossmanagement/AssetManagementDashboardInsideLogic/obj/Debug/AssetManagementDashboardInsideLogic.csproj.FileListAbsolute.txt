@@ -32,3 +32,4 @@ D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csproj.CopyComplete
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.dll
 D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.pdb
+D:\Projects\working directory\borno-asset-management-system\Waterlossmanagement\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csprojAssemblyReference.cache
